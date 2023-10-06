@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Categorias</h3>
+<a href="/">Home Page</a>
+<a href="/categorias">Categorias</a>
+<a href="/categorias/adicionar">Adicionar Categorias</a>
+<hr>
+<h2>Categorias Cadastradas</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Titulo</th>
+			<th>Autor</th>
+			<th>isbn</th>
+			<th>Opções</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="categoria:${categoria}">
+			<td th:text=${categoria.id}>Id</td>
+			<td th:text=${categoria.descricao}>Titulo</td>
+			<td th:text=${categoria.tributacao}>Autor</td>
+			<td th:text=${categoria.ativo}>isbn</td>
+			<td>Apagar e Editar</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
