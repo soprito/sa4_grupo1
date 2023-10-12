@@ -13,17 +13,12 @@ public class Livros {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	
+	private int id;
 	private String titulo;
 	private String autor;
 	private int isbn;
 	
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
 	public String getTitulo() {
 		return titulo;
 	}

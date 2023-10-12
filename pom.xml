@@ -12,7 +12,7 @@
 	<artifactId>springSA4</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springSA4</name>
-	<description>Projeto Spring Boot - UC9 - Desenvolvimento de Sistemas</description>
+	<description>Projeto Spring Boot UC 9 - Desenvolvimento de Sistemas</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -25,7 +25,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -42,6 +45,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
 	</dependencies>
 
 	<build>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Livros</title>
+</head>
+<body>
+	<h3>Livros</h3>
+<a href="/">Home Page</a>
+<a href="/categorias">Livros</a>
+<a href="/categorias/adicionar">Adicionar Livros</a>
+<hr>
+<h2>Livros Cadastrados</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Título</th>
+			<th>Autor</th>
+			<th>ISBN</th>
+			<th>Opções</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="livros:${livros}">
+			<td th:text=${livro.id}>Id</td>
+			<td th:text=${categoria.titulo}>Título</td>
+			<td th:text=${categoria.tributacao}>Autor</td>
+			<td th:text=${categoria.ativo}>ISBN</td>
+			<td>
+				<a th:href="@{livros/{id}(id=${livros.id})}">Apagar</a>
+				<a th:href="@{livros/editar/{id}(id=${livros.id})}">Editar</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>
