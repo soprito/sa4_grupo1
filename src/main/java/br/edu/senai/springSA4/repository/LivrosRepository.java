@@ -7,6 +7,12 @@ import org.springframework.stereotype.Repository;
 import br.edu.senai.springSA4.orm.Livros;
 
 @Repository
-public interface LivrosRepository extends JpaRepository<Livros, Integer> {
+
+public interface LivrosRepository extends JpaRepository<Livros, Integer>{
 
 }
+
+
+
+
+

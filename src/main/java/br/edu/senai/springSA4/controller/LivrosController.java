@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-
 import br.edu.senai.springSA4.orm.Livros;
 import br.edu.senai.springSA4.services.LivrosServico;
 
@@ -57,8 +56,8 @@ public class LivrosController {
 	
 	@PostMapping("/livros/{id}")
 	public String atualizarLivros(@PathVariable Integer id, @ModelAttribute("livros") Livros livros, Model modelo) {
-		Livros liv = servico.consultarLivrosId(id);
 		
+		Livros liv = servico.consultarLivrosId(id);
 		liv.setTitulo(livros.getTitulo());
 		liv.setAutor(livros.getAutor());
 		liv.setIsbn(livros.getIsbn());

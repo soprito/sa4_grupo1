@@ -5,8 +5,8 @@ import java.util.List;
 import br.edu.senai.springSA4.orm.Livros;
 
 public interface LivrosServico {
-	
-public List<Livros> listarLivros();
+
+	public List<Livros> listarLivros();
 	
 	public Livros salvarLivros(Livros livros);
 	

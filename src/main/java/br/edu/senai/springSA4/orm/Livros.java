@@ -14,11 +14,17 @@ public class Livros {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
-	private int id;
+	private Integer id;
 	private String titulo;
 	private String autor;
-	private int isbn;
+	private Integer isbn;
 	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public String getTitulo() {
 		return titulo;
 	}
@@ -31,10 +37,13 @@ public class Livros {
 	public void setAutor(String autor) {
 		this.autor = autor;
 	}
-	public int getIsbn() {
+	public Integer getIsbn() {
 		return isbn;
 	}
-	public void setIsbn(int isbn) {
+	public void setIsbn(Integer isbn) {
 		this.isbn = isbn;
 	}
+
+	
+
 }
